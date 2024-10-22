@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-dashboard.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="group1">
+            <div class="top">
+                <div class="logo">
+                    <img src="img/Purdue.png" width="220px" alt="Purdue Logo">
+                </div>
+            </div>
+            <ul id="menu">
+                <li id="current">
+                    <a href="#">
+                        <img src="img/All-logo.png" alt="All logo" width="45" height="45">
+                        All
+                        <div class="notification">
+                            <p>30</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/Slack.png" alt="Slack logo" width="45" height="45">
+                        Slack
+                        <div class="notification-1">
+                            <p>3</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/Outlook.png" alt="Outlook logo" width="45" height="41">
+                        Outlook
+                        <div class="notification-3">
+                            <p>3</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/Team.png" alt="Team logo" width="45" height="39">
+                        Teams
+                        <div class="notification-4">
+                            <p>3</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/Starred.png" alt="Starred logo" width="40" height="40">
+                        Starred
+                        <div class="notification-5">
+                            <p>3</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="bottom">
+            <div class="logo">
+                <img src="img/Propic'.jpg" width="60px" alt="Purdue Logo">
+            </div>
+            <div class="info">
+                <div class="user">
+                    <h3>User name</h3>
+                </div>
+                <div class="instructor">
+                    <p>Instructors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message-ui">
+        <div class="input-box-1">
+            <input type="email" placeholder="Search For Message" required>
+        </div>
+        <div class="outlook">
+            <div class="outlook-wrapper">
+                <div class="Title-main">
+                    <h1>Slack</h1>
+                    <div class="elements">
+                        <div class="num-mess">
+                            <p>69 Message</p>
+                        </div>
+                        <div class="urgent-stat">
+                            <p>7 Urgent</p>
+                        </div>
+                        <div class="mid-stat">
+                            <p>3 Mid</p>
+                        </div>
+                        <div class="cool-stat">
+                            <p>2 Cool</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <div class="dev1">
+                            <p>Message</p>
+                        </div>
+                        <div class="dev22">
+                            <div class="dev2">
+                                <p>Type</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Starred</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Date</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Options</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Rectangle 4.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="type">
+                                    <p>Urgent</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Rectangle 4.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="type">
+                                    <p>Urgent</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other2">
+                                <div class="type">
+                                    <p>Mid</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile3.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other3">
+                                <div class="type">
+                                    <p>Cool</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile3.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other3">
+                                <div class="type">
+                                    <p>Cool</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="outlook">
+            <div class="outlook-wrapper">
+                <div class="Title-main">
+                    <h1>Outlook</h1>
+                    <div class="elements">
+                        <div class="num-mess">
+                            <p>69 Message</p>
+                        </div>
+                        <div class="urgent-stat">
+                            <p>7 Urgent</p>
+                        </div>
+                        <div class="mid-stat">
+                            <p>3 Mid</p>
+                        </div>
+                        <div class="cool-stat">
+                            <p>2 Cool</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <div class="dev1">
+                            <p>Message</p>
+                        </div>
+                        <div class="dev22">
+                            <div class="dev2">
+                                <p>Type</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Starred</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Date</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Options</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Rectangle 4.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="type">
+                                    <p>Urgent</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>ß
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Rectangle 4.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="type">
+                                    <p>Urgent</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other2">
+                                <div class="type">
+                                    <p>Mid</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile3.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other3">
+                                <div class="type">
+                                    <p>Cool</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile3.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other3">
+                                <div class="type">
+                                    <p>Cool</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="outlook">
+            <div class="outlook-wrapper">
+                <div class="Title-main">
+                    <h1>Teams</h1>
+                    <div class="elements">
+                        <div class="num-mess">
+                            <p>69 Message</p>
+                        </div>
+                        <div class="urgent-stat">
+                            <p>7 Urgent</p>
+                        </div>
+                        <div class="mid-stat">
+                            <p>3 Cool</p>
+                        </div>
+                        <div class="cool-stat">
+                            <p>2 Cool</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="title">
+                        <div class="dev1">
+                            <p>Message</p>
+                        </div>
+                        <div class="dev22">
+                            <div class="dev2">
+                                <p>Type</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Starred</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Date</p>
+                            </div>
+                            <div class="dev2">
+                                <p>Options</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Rectangle 4.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="type">
+                                    <p>Urgent</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>ß
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Rectangle 4.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other">
+                                <div class="type">
+                                    <p>Urgent</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other2">
+                                <div class="type">
+                                    <p>Mid</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile3.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other3">
+                                <div class="type">
+                                    <p>Cool</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-bar">
+                        <div class="wrapper-mess" onclick="toggleExpand(this)">
+                            <div class="profile">
+                                <img src="img/Profile3.jpg" width="60px" height="60px" alt="Profile Picture">
+                                <div class="text">
+                                    <div id="Username">
+                                        <h2>Username</h2>
+                                    </div>
+                                    <div id="content">
+                                        <p>I hope you're doing well. I wanted to ask for some clarification about the homework...</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="other3">
+                                <div class="type">
+                                    <p>Cool</p>
+                                </div>
+                                <div class="star">
+                                    <img src="img/Star.png" width="25px" height="25px" alt="Star Icon">
+                                </div>
+                                <div class="date">
+                                    <p>May 2024</p>
+                                </div>
+                                <div class="options">
+                                    <img src="img/Frame 1707477971.jpg" width="6px" alt="Options Icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="expanded-content">
+                            <div class="text-mess">
+                                <p>I hope you're doing well. I wanted to ask for some clarification about the homework assignment that's due this week. I'm a bit confused about specific part or concept, e.g., "how to structure the essay" or "the calculations in problem 3.
+                                    Would you be able to provide some guidance or examples that might help me understand it better? I appreciate your help!
+                                </p>
+                            </div>
+                            <div class="input-reply">
+                                <input type="email" placeholder="Send Reply" required>
+                                <div class="send-bttn">
+                                    <img src="img/message.png" width="20px" height="20px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+          
+
+    </div>
+    <script>
+       function toggleExpand(wrapperElement) {
+        const messageBar = wrapperElement.parentElement;
+        messageBar.classList.toggle('expanded');
+    }
+    </script>
+</body>
+</html>
