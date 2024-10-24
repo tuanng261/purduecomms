@@ -839,13 +839,20 @@
             </div>
         </div> 
         <div class="Note">
-            <textarea rows="10" cols="50">Note Area.</textarea>
-        </div>    
+            <textarea rows="10" cols="50" onclick="toggleNoteExpansion(this)">Note Area.</textarea>
+        </div>        
     </div>
     <script>
-       function toggleExpand(wrapperElement) {
+        function toggleExpand(wrapperElement) {
         const messageBar = wrapperElement.parentElement;
         messageBar.classList.toggle('expanded');
+        }
+        function toggleNoteExpansion(noteElement) {
+        if (noteElement.style.height === "400px") {
+            noteElement.style.height = "50px"; 
+        } else {
+            noteElement.style.height = "400px"; 
+        }
     }
     </script>
 </body>
