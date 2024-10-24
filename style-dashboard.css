@@ -102,6 +102,23 @@ body {
     align-items: center;
     justify-content: center;
 }
+.Note{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+}
+.Note textarea{
+    font-size: 12px;
+    padding-top: 20px;
+    width: 300px;
+    text-align: center;
+    height: 50px;
+    background-color: #CEB888;
+    border-radius:0px 0px 15px 15px;
+}
 .message{
     box-shadow:0 5px 5px rgba(0,0,0,.1);
     background-color: #fff;
