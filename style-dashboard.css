@@ -111,13 +111,15 @@ body {
     right: 0;
 }
 .Note textarea{
+    cursor: pointer;
     font-size: 12px;
     padding-top: 20px;
-    width: 300px;
+    width: 350px;
     text-align: center;
     height: 50px;
     background-color: #CEB888;
     border-radius:0px 0px 15px 15px;
+    transition: height 0.3s ease;
 }
 .message{
     box-shadow:0 5px 5px rgba(0,0,0,.1);
@@ -334,7 +336,6 @@ body {
     justify-content: center;
     width: 40px;
     display: flex;
-
 }
 .input-reply input {
     width: 95%;
